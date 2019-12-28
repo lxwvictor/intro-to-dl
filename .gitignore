@@ -4,6 +4,7 @@
 readonly
 __pycache__
 *.pyc
+*.hdf5
 
 # week 2
 tensorboard_logs

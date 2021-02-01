@@ -13106,6 +13106,21 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">DeprecationWarning</span><span class="p">)</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="ne">FutureWarning</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13148,7 +13163,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
@@ -13192,7 +13207,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
@@ -13206,7 +13221,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span><span class="p">,</span> <span class="n">display</span>
@@ -13281,7 +13296,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
@@ -13321,7 +13336,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
@@ -13344,7 +13359,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">to_matrix</span><span class="p">(</span><span class="n">lines</span><span class="p">,</span><span class="n">token_to_id</span><span class="p">,</span><span class="n">max_len</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">pad</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int32&#39;</span><span class="p">,</span><span class="n">time_major</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
@@ -13368,7 +13383,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">batch_words</span><span class="p">,</span><span class="n">batch_tags</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">sentence</span><span class="p">)</span> <span class="k">for</span> <span class="n">sentence</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]])</span>
@@ -13436,7 +13451,7 @@ Tag ids:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">keras</span>
@@ -13468,66 +13483,6 @@ Tag ids:
 
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>Using TensorFlow backend.
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorflow\python\framework\dtypes.py:516: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_qint8 = np.dtype([(&#34;qint8&#34;, np.int8, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorflow\python\framework\dtypes.py:517: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_quint8 = np.dtype([(&#34;quint8&#34;, np.uint8, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorflow\python\framework\dtypes.py:518: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_qint16 = np.dtype([(&#34;qint16&#34;, np.int16, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorflow\python\framework\dtypes.py:519: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_quint16 = np.dtype([(&#34;quint16&#34;, np.uint16, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorflow\python\framework\dtypes.py:520: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_qint32 = np.dtype([(&#34;qint32&#34;, np.int32, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorflow\python\framework\dtypes.py:525: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  np_resource = np.dtype([(&#34;resource&#34;, np.ubyte, 1)])
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\keras\backend\tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
-
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:541: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_qint8 = np.dtype([(&#34;qint8&#34;, np.int8, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:542: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_quint8 = np.dtype([(&#34;quint8&#34;, np.uint8, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:543: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_qint16 = np.dtype([(&#34;qint16&#34;, np.int16, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:544: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_quint16 = np.dtype([(&#34;quint16&#34;, np.uint16, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:545: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  _np_qint32 = np.dtype([(&#34;qint32&#34;, np.int32, 1)])
-C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:550: FutureWarning: Passing (type, 1) or &#39;1type&#39; as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / &#39;(1,)type&#39;.
-  np_resource = np.dtype([(&#34;resource&#34;, np.ubyte, 1)])
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\keras\backend\tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
-
-WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\keras\backend\tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
-
 </pre>
 </div>
 </div>
@@ -13547,7 +13502,7 @@ WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-package
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">keras.utils.np_utils</span> <span class="kn">import</span> <span class="n">to_categorical</span>
@@ -13590,7 +13545,7 @@ Keras callbacks allow you to write a custom code to be ran once every epoch or e
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">compute_test_accuracy</span><span class="p">(</span><span class="n">model</span><span class="p">):</span>
@@ -13624,7 +13579,7 @@ Keras callbacks allow you to write a custom code to be ran once every epoch or e
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">)</span>
@@ -13647,54 +13602,50 @@ Keras callbacks allow you to write a custom code to be ran once every epoch or e
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\keras\optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
-
-WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\keras\backend\tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.
-
-WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorflow\python\ops\math_grad.py:1250: add_dispatch_support.&lt;locals&gt;.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+<pre>WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\tensorflow\python\ops\math_grad.py:1250: add_dispatch_support.&lt;locals&gt;.wrapper (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use tf.where in 2.0, which has the same broadcast rule as np.where
-WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\keras\backend\tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.
+WARNING:tensorflow:From C:\Users\Xiaowei\Anaconda3\envs\tfspark\lib\site-packages\keras\backend\tensorflow_backend.py:422: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
 
 Epoch 1/5
-1344/1343 [==============================] - 36s 27ms/step - loss: 0.2385
+1344/1343 [==============================] - 30s 22ms/step - loss: 0.2313
 
 Measuring validation accuracy...
-14335/14335 [==============================] - 6s 435us/step
+14335/14335 [==============================] - 5s 372us/step
 
-Validation accuracy: 0.94074
+Validation accuracy: 0.94149
 
 Epoch 2/5
-1344/1343 [==============================] - 32s 24ms/step - loss: 0.0572
+1344/1343 [==============================] - 29s 22ms/step - loss: 0.0572
 
 Measuring validation accuracy...
-14335/14335 [==============================] - 6s 425us/step
+14335/14335 [==============================] - 5s 376us/step
 
-Validation accuracy: 0.94532
+Validation accuracy: 0.94456
 
 Epoch 3/5
-1344/1343 [==============================] - 33s 24ms/step - loss: 0.0508
+1344/1343 [==============================] - 33s 25ms/step - loss: 0.0507
 
 Measuring validation accuracy...
-14335/14335 [==============================] - 6s 433us/step
+14335/14335 [==============================] - 5s 371us/step
 
-Validation accuracy: 0.94487
+Validation accuracy: 0.94666
 
 Epoch 4/5
-1344/1343 [==============================] - 32s 24ms/step - loss: 0.0467
+1344/1343 [==============================] - 29s 22ms/step - loss: 0.0464
 
 Measuring validation accuracy...
-14335/14335 [==============================] - 6s 433us/step
+14335/14335 [==============================] - 5s 382us/step
 
-Validation accuracy: 0.94685
+Validation accuracy: 0.94584
 
 Epoch 5/5
-1344/1343 [==============================] - 32s 24ms/step - loss: 0.0424
+1344/1343 [==============================] - 28s 21ms/step - loss: 0.0425
 
 Measuring validation accuracy...
-14335/14335 [==============================] - 6s 425us/step
+14335/14335 [==============================] - 6s 395us/step
 
-Validation accuracy: 0.94633
+Validation accuracy: 0.94642
 
 </pre>
 </div>
@@ -13702,13 +13653,13 @@ Validation accuracy: 0.94633
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;keras.callbacks.History at 0x27d44b64348&gt;</pre>
+<pre>&lt;keras.callbacks.callbacks.History at 0x1d918fac208&gt;</pre>
 </div>
 
 </div>
@@ -13727,7 +13678,7 @@ Validation accuracy: 0.94633
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">compute_test_accuracy</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
@@ -13750,8 +13701,8 @@ Validation accuracy: 0.94633
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>14335/14335 [==============================] - 6s 427us/step
-Final accuracy: 0.94633
+<pre>14335/14335 [==============================] - 6s 385us/step
+Final accuracy: 0.94642
 </pre>
 </div>
 </div>
@@ -13774,13 +13725,21 @@ Final accuracy: 0.94633
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Define a model that utilizes bidirectional SimpleRNN</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">()</span>
 
-<span class="o">&lt;</span><span class="n">Your</span> <span class="n">code</span> <span class="n">here</span><span class="o">!</span>&gt;
+<span class="c1"># &lt;Your code here!&gt;</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">InputLayer</span><span class="p">([</span><span class="kc">None</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int32&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">Embedding</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_words</span><span class="p">),</span><span class="mi">50</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">Bidirectional</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">SimpleRNN</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span><span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">)))</span>
+
+<span class="c1">#add top layer that predicts tag probabilities</span>
+<span class="n">stepwise_dense</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_tags</span><span class="p">),</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
+<span class="n">stepwise_dense</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">stepwise_dense</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">stepwise_dense</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13790,7 +13749,7 @@ Final accuracy: 0.94633
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span><span class="s1">&#39;categorical_crossentropy&#39;</span><span class="p">)</span>
@@ -13803,10 +13762,80 @@ Final accuracy: 0.94633
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Epoch 1/5
+1344/1343 [==============================] - 51s 38ms/step - loss: 0.1976
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 10s 726us/step
+
+Validation accuracy: 0.95566
+
+Epoch 2/5
+1344/1343 [==============================] - 50s 38ms/step - loss: 0.0424
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 10s 707us/step
+
+Validation accuracy: 0.96079
+
+Epoch 3/5
+1344/1343 [==============================] - 51s 38ms/step - loss: 0.0349
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 10s 691us/step
+
+Validation accuracy: 0.96215
+
+Epoch 4/5
+1344/1343 [==============================] - 51s 38ms/step - loss: 0.0297
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 10s 710us/step
+
+Validation accuracy: 0.96233
+
+Epoch 5/5
+1344/1343 [==============================] - 52s 39ms/step - loss: 0.0249
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 10s 700us/step
+
+Validation accuracy: 0.96109
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[16]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;keras.callbacks.callbacks.History at 0x1d91aab5308&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">compute_test_accuracy</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
@@ -13817,6 +13846,27 @@ Final accuracy: 0.94633
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>14335/14335 [==============================] - 10s 706us/step
+
+Final accuracy: 0.96109
+Well done!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13865,11 +13915,25 @@ Final accuracy: 0.94633
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Define a model that utilizes bidirectional SimpleRNN</span>
-<span class="n">model</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">Your</span> <span class="n">code</span> <span class="n">here</span><span class="o">!</span>&gt;
+
+<span class="c1"># &lt;Your code here!&gt;</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">()</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">InputLayer</span><span class="p">([</span><span class="kc">None</span><span class="p">],</span><span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int32&#39;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">Embedding</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_words</span><span class="p">),</span><span class="mi">50</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">Conv1D</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,),</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;same&quot;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">Bidirectional</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">GRU</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dropout</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">Conv1D</span><span class="p">(</span><span class="n">filters</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,),</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;same&quot;</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">Bidirectional</span><span class="p">(</span><span class="n">L</span><span class="o">.</span><span class="n">GRU</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">return_sequences</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">dropout</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)))</span>
+
+<span class="c1">#add top layer that predicts tag probabilities</span>
+<span class="n">stepwise_dense</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">all_tags</span><span class="p">),</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
+<span class="n">stepwise_dense</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">TimeDistributed</span><span class="p">(</span><span class="n">stepwise_dense</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">stepwise_dense</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13879,7 +13943,57 @@ Final accuracy: 0.94633
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Model: &#34;sequential_3&#34;
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_3 (Embedding)      (None, None, 50)          500100    
+_________________________________________________________________
+conv1d_1 (Conv1D)            (None, None, 16)          2416      
+_________________________________________________________________
+bidirectional_2 (Bidirection (None, None, 128)         31104     
+_________________________________________________________________
+conv1d_2 (Conv1D)            (None, None, 32)          12320     
+_________________________________________________________________
+bidirectional_3 (Bidirection (None, None, 128)         37248     
+_________________________________________________________________
+time_distributed_3 (TimeDist (None, None, 14)          1806      
+=================================================================
+Total params: 584,994
+Trainable params: 584,994
+Non-trainable params: 0
+_________________________________________________________________
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#feel free to change anything here</span>
@@ -13894,10 +14008,80 @@ Final accuracy: 0.94633
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Epoch 1/5
+1344/1343 [==============================] - 229s 171ms/step - loss: 0.2173
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 50s 4ms/step
+
+Validation accuracy: 0.95449
+
+Epoch 2/5
+1344/1343 [==============================] - 220s 164ms/step - loss: 0.0539
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 50s 3ms/step
+
+Validation accuracy: 0.95851
+
+Epoch 3/5
+1344/1343 [==============================] - 225s 167ms/step - loss: 0.0441
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 51s 4ms/step
+
+Validation accuracy: 0.96220
+
+Epoch 4/5
+1344/1343 [==============================] - 219s 163ms/step - loss: 0.0392
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 50s 3ms/step
+
+Validation accuracy: 0.96301
+
+Epoch 5/5
+1344/1343 [==============================] - 221s 165ms/step - loss: 0.0359
+
+Measuring validation accuracy...
+14335/14335 [==============================] - 50s 3ms/step
+
+Validation accuracy: 0.96371
+
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[20]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;keras.callbacks.callbacks.History at 0x1db01190d48&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">compute_test_accuracy</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
@@ -13916,6 +14100,27 @@ Final accuracy: 0.94633
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>14335/14335 [==============================] - 50s 3ms/step
+
+Final accuracy: 0.96371
+Just a few more iterations!
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -13964,6 +14169,19 @@ Final accuracy: 0.94633
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
